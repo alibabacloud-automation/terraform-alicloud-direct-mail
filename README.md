@@ -13,12 +13,15 @@ These types of resources are supported:
 Create a Domain, Receivers and tags.
 ```hcl
 module "example" {
-  source          = "terraform-alicloud-modules/direct-mail/alicloud"
-  domain_name     = "your_domain_name"
-  description     = "your_description"
-  receivers_alias = "your_receivers_alias"
-  receivers_name  = "your_receivers_name"
-  tag_name        = "your_tag_name"
+  source           = "terraform-alicloud-modules/direct-mail/alicloud"
+  create_domain    = true
+  domain_name      = "your_domain_name"
+  create_receivers = true
+  description      = "your_description"
+  receivers_alias  = "your_receivers_alias"
+  receivers_name   = "your_receivers_name"
+  create_tags      = true
+  tag_name         = "your_tag_name"
 }
 ```
 
