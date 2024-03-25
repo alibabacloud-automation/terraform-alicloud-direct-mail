@@ -1,3 +1,7 @@
+provider "alicloud" {
+  region = "cn-hangzhou"
+}
+
 module "direct-mail" {
   source = "../.."
   #  alicloud_direct_mail_domain
